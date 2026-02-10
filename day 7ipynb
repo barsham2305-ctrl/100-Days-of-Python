@@ -1,0 +1,252 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "b07f51ef-6219-4834-86b9-1035599f15a9",
+   "metadata": {},
+   "source": [
+    "# 1. Using the + operator:\n",
+    "\n",
+    "**This creates a new list by joining two lists together.**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "047df22c-0e49-4081-97c7-5ec01882a32f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 5, 6, 7]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a=[1,2,3]\n",
+    "b=[5,6,7]\n",
+    "res=a+b\n",
+    "print(res)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "af80a1be-fee1-4557-91ba-c29c21c06af3",
+   "metadata": {},
+   "source": [
+    "# 2. Using the extend() method:\n",
+    "\n",
+    "**This adds all the elements of the second list to the first list in-place.**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "d509a532-59cb-4e0e-ad3f-53a83db5eb97",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[11, 22, 33, 44, 55, 66, 77, 88]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a=[11,22,33,44]\n",
+    "b=[55,66,77,88]\n",
+    "a.extend(b)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5f878dec-b193-4c2b-b95f-3c27801ed404",
+   "metadata": {},
+   "source": [
+    "# 3. Difference between for loop and while loop in Python\n",
+    "**For loop: Used when we know how many times to repeat, often with lists, tuples, sets, or dictionaries.**\n",
+    "**While loop: Used when we only have an end condition and don’t know exactly how many times it will repeat.**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "04b7ef46-d8b3-4867-9a69-c4bc0ac4061f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(5):\n",
+    "    print(i)\n",
+    "\n",
+    "c = 0\n",
+    "while c < 5:\n",
+    "    print(c)\n",
+    "    c += 1\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "26b918b6-4ee7-4453-ad89-2fe57a7aa61e",
+   "metadata": {},
+   "source": [
+    "# 4. How do you floor a number in Python?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "0cf2fde4-0cbe-4343-8398-87099116fb61",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "import math\n",
+    "n = 3.7\n",
+    "f_num = math.floor(n)\n",
+    "print(f_num)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "cdccfac4-fb2f-4e26-9047-97f3c34060f8",
+   "metadata": {},
+   "source": [
+    "# 5. What is the difference between / and // in Python?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "480801a9-99bb-4b8f-88ca-1f585deb909c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2.5\n",
+      "2\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(5/2)\n",
+    "print(5//2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a2f278d2-7692-43f0-b0a1-badbacea87fd",
+   "metadata": {},
+   "source": [
+    "# 6. What is List Comprehension? Give an Example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "cf8d38e1-1ed9-49d2-8cfe-15d0f549b327",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[4, 9, 16, 25]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a=[2,3,4,5]\n",
+    "res = [val**2 for val in a]\n",
+    "print(res)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fa640ec6-e846-4517-8608-80aed7b84ac1",
+   "metadata": {},
+   "source": [
+    "# What is Dictionary Comprehension? Give an Example"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "b36ac6e2-8bac-4904-ae5a-d922dca9f31e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'a': 2, 'b': 3, 'c': 4, 'd': 5, 'e': 6, 'f': 7}\n"
+     ]
+    }
+   ],
+   "source": [
+    "keys =['a','b','c','d','e','f']\n",
+    "values =[2,3,4,5,6,7]\n",
+    "d={ k:v for(k,v) in zip(keys,values)}\n",
+    "print(d)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "75aab993-20b3-44bb-bed2-7e7a7401c71e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
